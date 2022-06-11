@@ -1,0 +1,58 @@
+{
+   "name": "@youzan/jira-booster",
+   "version": "0.0.1",
+   "license": "UNLICENSED",
+   "scripts": {
+      "start": "NODE_ENV=production node bootstrap.js",
+      "dev": "cross-env NODE_ENV=local midway-bin dev --ts",
+      "test": "midway-bin test --ts",
+      "cov": "midway-bin cov --ts",
+      "lint": "mwts check",
+      "lint:fix": "mwts fix",
+      "ci": "npm run cov",
+      "build": "midway-bin build -c",
+      "typeorm": "node --require ts-node/register ./node_modules/typeorm/cli.js"
+   },
+   "dependencies": {
+      "@midwayjs/axios": "^3.0.0",
+      "@midwayjs/bootstrap": "^3.0.0",
+      "@midwayjs/core": "^3.0.0",
+      "@midwayjs/decorator": "^3.0.0",
+      "@midwayjs/info": "^3.0.0",
+      "@midwayjs/koa": "^3.0.0",
+      "@midwayjs/logger": "^2.14.0",
+      "@midwayjs/orm": "^3.0.0",
+      "@midwayjs/task": "3",
+      "@midwayjs/validate": "^3.0.0",
+      "@midwayjs/view-ejs": "3",
+      "lodash": "^4.17.21",
+      "moment": "^2.29.1",
+      "mysql2": "^2.3.3",
+      "typeorm": "^0.3.5"
+   },
+   "devDependencies": {
+      "@midwayjs/cli": "^1.2.90",
+      "@midwayjs/mock": "^3.0.0",
+      "@types/jest": "^26.0.10",
+      "@types/lodash": "^4.14.182",
+      "@types/node": "14",
+      "@typescript-eslint/eslint-plugin": "^4.33.0",
+      "@typescript-eslint/parser": "^4.33.0",
+      "cross-env": "^6.0.0",
+      "eslint": "^7.32.0",
+      "eslint-config-prettier": "^8.4.0",
+      "eslint-plugin-prettier": "^4.0.0",
+      "jest": "^26.4.0",
+      "mwts": "1.2.2",
+      "prettier": "^2.5.1",
+      "ts-jest": "^26.2.0",
+      "typescript": "^4.6.2"
+   },
+   "engines": {
+      "node": ">=12.0.0"
+   },
+   "midway-bin-clean": [
+      ".vscode/.tsbuildinfo",
+      "dist"
+   ]
+}

@@ -1,2 +1,3 @@
-# MidwayDemo
-A Demo Of Midway &amp;&amp; TypeORM &amp;&amp; MySQL
+# Midway Demo
+
+Demo of Midway + TypeORM + MySQL
